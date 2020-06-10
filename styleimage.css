@@ -1,13 +1,16 @@
 h1 {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 9.5%;
     font-size: 90px;
 }
 
 h2 {
-    text-align:center
+    text-align:center;
 }
 
+p {
+	text-align: center;
+}
 
 h1 span:nth-child(1) {
     color : rgb(64, 129, 237, 1);
@@ -77,4 +80,11 @@ li a:hover:not(.active) {
 }
 .active {
     background-color: #4CAF50;
+}
+
+body {
+	background-image: url(https://source.unsplash.com/featured/?);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
 }
