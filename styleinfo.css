@@ -4,7 +4,9 @@ h1 {
     font-size: 60px;
 }
 
-
+a {
+    text-decoration-style: none;
+}
 h1 span:nth-child(1) {
     color : rgb(64, 129, 237, 1);
 }
