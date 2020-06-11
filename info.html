@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Coogle-others</title>
+    <title>Coogle-More</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styleinfo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +25,11 @@
 	 80% { color: rgb(228, 65, 52, 1); }
 	 100% { color: rgb(64, 129, 237, 1);}
 	}
-		#aa:hover, #aa:focus {animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite;}
+		#aa:hover {animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite;}
 		body {
 			text-align: center;
 		}
+		#aa:focus{color: skyblue}
 	</style>
 </head>
 <body>
@@ -39,13 +40,14 @@
       <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
       <li><a href="image.html" style="text-decoration: none;">Image</a></li>
       <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
-      <li><a href="polymath.html" style="text-decoration: none;">Polymath</a></li>
+      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
       <!--<li><a href="http://kids.dongascience.com/" style="text-decoration:none">어린이과학동아</a></li>
       <li><a href="http://dongascience.donga.com/" style="text-decoration:none">과학동아</a></li>-->
-      <li><a class="active" href="info.html" style="text-decoration:none">others</a></li>
+      <li><a href="facebook.html" style="text-decoration: none;">Facebook</a></li>
+	  <li><a class="active" href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
     </ul>
     <!--<h1 class="no-drag"><span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>-->
-    <img src="%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png" height="100px" width="100px" style="margin: auto;margin-top: 9.5%">
+    <img class="no-drag" src="%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png" height="100px" width="100px" style="margin: auto;margin-top: 9.5%">
    	<span style="font-size: 30px"><h2 id="show" class="no-drag"></h2></span>
         <script>
             function d_clock() {
@@ -82,7 +84,14 @@
 <div class="accordion_area">
   <button class="btn btn_toggle">개발자 정보</button>
   <div class="content_area">
-    개발자 Coshaman<br>개발자 포트폴리오 : <a target="_blank" id = "aa" href="https://coshaman.github.io/portfolio/index.html">www.박성현.홈페이지.한국(클릭)</a>
+	  개발자 : 박성현<br>개발자 포트폴리오 : <a target="_blank" id = "aa" href="https://coshaman.github.io/portfolio/index.html">www.박성현.홈페이지.한국(클릭)</a><br>버전 : v 0.2<a target="_blank" id = "aa" href="https://coshaman.github.io/Poogle/index.html">(이전버전 poogle을 찾으시나요?)</a>
+  </div>
+</div>
+<div style="height: 25px;"></div>
+<div class="accordion_area">
+  <button class="btn btn_toggle">동아사이언스</button>
+  <div class="content_area">
+    <a href="polymath.html" style="text-decoration:none" id = "aa">폴리매스</a><br><a id = "aa" href="http://kids.dongascience.com/" style="text-decoration:none">어린이과학동아</a><br><a id = "aa" href="http://dongascience.donga.com/" style="text-decoration:none">과학동아</a>
   </div>
 </div>
 
