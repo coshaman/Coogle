@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Poogle</title>
+    <link rel="shortcut icon" type="image/x-icon" href="%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styleclock.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
     </style>
     
 </head>
-<body>
+<body onload="init()">
    <ul>
       <li><a href="index.html">Google</a></li>
       <li><a href="daum.html">Daum</a></li>
@@ -26,7 +27,7 @@
       <li><a href="image.html">Image</a></li>
       <li><a href="wiki.html">wiki</a></li>
       <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
-      <li><a href="facebook.html" style="text-decoration: none;">Facebook</a></li>
+      <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
 	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
     </ul>
    
@@ -60,6 +61,10 @@
         <a href="https://dionyziz.com/graphics/canvas-tetris/">좀 더 있지만 이거면 충분할 듯 하군요. 클릭 또 하세요.</a><br>
         <a href="https://play2048.co/">심심해서 마지막으로 하나 더 만들었습니다. 클릭해주세용 참고로 이건 다른 분들의 소스를 옮겼습니다.</a>
     <div id="disqus_thread"></div>
+    
+    <div style="position: fixed; bottom: 15px; right: 15px">
+    	<input type="button" class="btn btn-outline-info" onclick="back()" id = 'night_day' value = '배경 On'>
+    </div>
 <script>
 
 /**

@@ -7,6 +7,10 @@ h1 {
 a {
     text-decoration-style: none;
 }
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
 h1 span:nth-child(1) {
     color : rgb(64, 129, 237, 1);
 }
