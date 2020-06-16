@@ -2,60 +2,32 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Caum</title>
-    <link rel="shortcut icon" type="image/x-icon" href="%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png">
+    <title>Coogle</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styledaum.css">
-    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
-    <style type="text/css">
-        a:link    { text-decoration:none }
-        a:visited { text-decoration:none }
-        a:hover   { text-decoration:none }
-        a:active  { text-decoration:none }
     
-    </style>
 </head>
 <body onload="init()">
    <ul>
-      <li><a href="index.html">Google</a></li>
-      <li><a class="active" href="daum.html">Daum</a></li>
+      <li><a class="active" href="index.html" style="text-decoration: none;">Google</a></li>
+      <li><a href="daum.html" style="text-decoration: none;">Daum</a></li>
       <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
-      <li><a href="youtube.html">Youtube</a></li>
-      <li><a href="image.html">Image</a></li>
-      <li><a href="wiki.html">wiki</a></li>
+      <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
+      <li><a href="image.html" style="text-decoration: none;">Image</a></li>
+      <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
       <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
       <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
 	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
     </ul>
    
-    <h1 class="no-drag"><a href="https://www.daum.net/"><span>C</span><span>a</span><span>u</span><span>m</span></a></h1>
-    <form action="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=" method="get">
-        <div class="mx-auto search-bar input-group mb-3 rounded-pill" style="width: 58vw;">
-            <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
-            <div class="input-group-append">
-                <!--<button type="button" id="" class="btn btnEvent"><img src="search.png" alt="btnImages" class="btnImages" width="30px" height="30px">
-                </button>-->
-                <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
-            </div>
-        </div>
-    </form>
-    <!--<form action="https://www.google.com/search?q=" method="get">
-        <div class="mx-auto search-bar input-group rounded-pill">
-          <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div role="separator" class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </div>
-        </div>
-    </form>--><div style="position: fixed; bottom: 15px; right: 15px">
+    <h1 class="no-drag"><span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span><sup style="font-size: 20px;">all search</sup></h1>
+    <script async src="https://cse.google.com/cse.js?cx=002805497075684405503:8qhnbpcmdwm"></script>
+	<div style="border: 1px solid black;width: 80%;margin: auto;"><div class="gcse-search"></div></div>
+    <div style="position: fixed; bottom: 15px; right: 15px">
     	<input type="button" class="btn btn-outline-info" onclick="back()" id = 'night_day' value = '배경 On'>
     </div>
     <script>
@@ -145,6 +117,6 @@
 			  }
 		}
 	</script>
-    
+      
 </body>
 </html>
