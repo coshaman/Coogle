@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styleclock.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
-    
+
     <style>
         #center {
             width: 50%;
@@ -16,21 +16,30 @@
             text-align: center;
         }
     </style>
-    
+	<script>var pc_device = "win16|win32|win64|mac|macintel";
+
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+
+    if ( this_device ) {
+
+        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            console.log('MOBILE');
+			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
+        } else {
+            console.log('PC');
+        }
+
+	}</script>
+
 </head>
 <body onload="init()">
-   <ul>
-      <li><a href="index.html">Google</a></li>
-      <li><a href="daum.html">Daum</a></li>
-      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
-      <li><a href="youtube.html">Youtube</a></li>
-      <li><a href="image.html">Image</a></li>
-      <li><a href="wiki.html">wiki</a></li>
-      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
-      <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
-	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
-    </ul>
-   
+  <ul>
+    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
+   <li><a href="info.html" style="text-decoration:none">+More</a></li>
+   <li><a class="active" href="#" style="text-decoration: none;"></a></li>
+ </ul>
+
     <h1><span>P</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
     <div id="center">
     <div class="alert alert-info" role="alert">
@@ -51,7 +60,7 @@
             setInterval(d_clock, 1000);
         </script>
     </div></div>
-    
+
     <a href="snake.html">아마 여러분들께서는 시계를 보고 실망스러우실 겁니다.
     제가 이거 보여드리려고 했겠습니까...
     지뢰찾기만큼 좋은 게임은 아니고, 수학을 사용하지도 않지만...
@@ -61,7 +70,7 @@
         <a href="https://dionyziz.com/graphics/canvas-tetris/">좀 더 있지만 이거면 충분할 듯 하군요. 클릭 또 하세요.</a><br>
         <a href="https://play2048.co/">심심해서 마지막으로 하나 더 만들었습니다. 클릭해주세용 참고로 이건 다른 분들의 소스를 옮겼습니다.</a>
     <div id="disqus_thread"></div>
-    
+
     <div style="position: fixed; bottom: 15px; right: 15px">
     	<input type="button" class="btn btn-outline-info" onclick="back()" id = 'night_day' value = '배경 On'>
     </div>
@@ -99,9 +108,9 @@ s.setAttribute('data-timestamp', +new Date());
           </div>
         </div>
     </form>-->
-    
-    
-    
+
+
+
     <script id="dsq-count-scr" src="//poogle-1.disqus.com/count.js" async></script>
 </body>
 </html>

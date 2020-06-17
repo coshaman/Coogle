@@ -9,21 +9,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
-    
+	<script>var pc_device = "win16|win32|win64|mac|macintel";
+
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+
+    if ( this_device ) {
+
+        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            console.log('MOBILE');
+			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
+        } else {
+            console.log('PC');
+        }
+
+	}</script>
+
 </head>
 <body onload="init()">
-   <ul>
-      <li><a class="active" href="index.html" style="text-decoration: none;">Google</a></li>
-      <li><a href="daum.html" style="text-decoration: none;">Daum</a></li>
-      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
-      <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
-      <li><a href="image.html" style="text-decoration: none;">Image</a></li>
-      <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
-      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
-      <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
-	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
-    </ul>
-   
+  <ul>
+    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
+   <li><a href="info.html" style="text-decoration:none">+More</a></li>
+   <li><a class="active" href="#" style="text-decoration: none;">all search</a></li>
+ </ul>
+
     <h1 class="no-drag"><span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span><sup style="font-size: 20px;">all search</sup></h1>
     <script async src="https://cse.google.com/cse.js?cx=002805497075684405503:8qhnbpcmdwm"></script>
 	<div style="border: 1px solid black;width: 80%;margin: auto;"><div class="gcse-search"></div></div>
@@ -65,7 +74,7 @@
 				  links[i].style.color = 'powderblue';
 				  i = i + 1;
 				}
-			  } 
+			  }
 			 else {
 				document.querySelector('body').style.backgroundColor ='#81F7F3';
 				 localStorage.Theme = "blue";
@@ -81,7 +90,7 @@
 			  }
 		}
 		function init() {
-			
+
 			var val = localStorage.Theme;
 			if(val ==='night'){
 				document.querySelector('body').style.backgroundColor ='black';
@@ -117,6 +126,6 @@
 			  }
 		}
 	</script>
-      
+
 </body>
 </html>

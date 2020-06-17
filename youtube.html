@@ -14,16 +14,31 @@
         a:visited { text-decoration:none }
         a:hover   { text-decoration:none }
         a:active  { text-decoration:none }
-    
+
     </style>
     <style>
         body{
             background-color: black
         }
     </style>
+	<script>var pc_device = "win16|win32|win64|mac|macintel";
+
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+
+    if ( this_device ) {
+
+        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            console.log('MOBILE');
+			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
+        } else {
+            console.log('PC');
+        }
+
+	}</script>
 </head>
 <body>
-   <ul>
+   <!--<ul>
       <li><a href="index.html">Google</a></li>
       <li><a href="daum.html">Daum</a></li>
       <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
@@ -33,8 +48,12 @@
       <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
       <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
 	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
-    </ul>
-   
+  </ul>-->
+  <ul>
+    <li><a href="moa.html">Search</a></li>
+   <li><a href="info.html" style="text-decoration:none">+More</a></li>
+   <li><a class="active" href="#" style="text-decoration: none;">Youtube</a></li>
+ </ul>
 	<h1 class="no-drag"><a href="https://www.youtube.com/"><span style="color : red;"><i class="fab fa-youtube" width="100px" height="60px"></i></span><span style="color: white" id="tube">Coutube</span></a></h1>
     <form action="https://www.youtube.com/results?search_query=" method="get">
         <div class="mx-auto search-bar input-group mb-3 rounded-pill" style="width: 58vw;">
@@ -71,7 +90,7 @@
 				document.querySelector('body').style.color ='white';
 				document.querySelector('#night_day').value ='다크모드 On';
 				document.getElementById('tube').style.color = "white"
-				
+
 				var links = document.querySelectorAll('a');
 				var i = 0;
 				while(i < links.length){
@@ -93,14 +112,14 @@
 				document.querySelector('body').style.backgroundColor ='black';
 				document.querySelector('body').style.color ='white';
 				document.querySelector('#night_day').value ='blue';
-				
+
 				var links = document.querySelectorAll('a');
 				var i = 0;
 				while(i < links.length){
 				  links[i].style.color = 'powderblue';
 				  i = i + 1;
 				}
-			  } 
+			  }
 			 else {
 				document.querySelector('body').style.backgroundColor ='#81F7F3';
 				document.querySelector('body').style.color ='#2EFEC8';

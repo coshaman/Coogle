@@ -14,23 +14,32 @@
         a:visited { text-decoration:none }
         a:hover   { text-decoration:none }
         a:active  { text-decoration:none }
-    
+
     </style>
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
+	<script>var pc_device = "win16|win32|win64|mac|macintel";
+
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+
+    if ( this_device ) {
+
+        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            console.log('MOBILE');
+			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
+        } else {
+            console.log('PC');
+        }
+
+	}</script>
 </head>
 <body onload="init()">
-   <ul>
-      <li><a href="index.html">Google</a></li>
-      <li><a href="daum.html">Daum</a></li>
-      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
-      <li><a href="youtube.html">Youtube</a></li>
-      <li><a class="active" href="image.html">Image</a></li>
-      <li><a href="wiki.html">wiki</a></li>
-      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
-      <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
-	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
-    </ul>
-   
+  <ul>
+    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
+   <li><a href="info.html" style="text-decoration:none">+More</a></li>
+   <li><a class="active" href="#" style="text-decoration: none;">Image</a></li>
+ </ul>
+
     <h1 class="no-drag"><span>C</span><span>i</span><span>m</span><span>a</span><span>g</span><span>e</span></h1>
     <h2><span style="color: darkcyan;">저작권 무료 이미지 제공</span></h2>
     <form action="https://pixabay.com/ko/images/search/" method="get">
@@ -61,10 +70,10 @@
     <div style="position: relative; text-align: center;">
 		<p><span style="color : darkcyan; font-size: 15px; text-align: center;">background image from unsplash</span></p>
     </div>
-    
+
     <script>
-		
-		
+
+
 		function back() {
 			if(document.querySelector('#night_day').value ==='night'){
 				document.querySelector('body').style.backgroundColor ='black';
@@ -98,7 +107,7 @@
 				  links[i].style.color = 'powderblue';
 				  i = i + 1;
 				}
-			  } 
+			  }
 			 else {
 				document.querySelector('body').style.backgroundColor ='#81F7F3';
 				 localStorage.Theme = "blue";
@@ -114,7 +123,7 @@
 			  }
 		}
 		function init() {
-			
+
 			var val = localStorage.Theme;
 			if(val ==='night'){
 				document.querySelector('body').style.backgroundColor ='black';

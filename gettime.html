@@ -9,29 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
-    
+
+	<script>var pc_device = "win16|win32|win64|mac|macintel";
+
+    // 접속한 디바이스 환경
+    var this_device = navigator.platform;
+
+    if ( this_device ) {
+
+        if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
+            console.log('MOBILE');
+			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
+        } else {
+            console.log('PC');
+        }
+
+	}</script>
 </head>
 <body style="text-align: center;" onload="init()">
-   <ul>
-      <li><a href="index.html" style="text-decoration: none;">Google</a></li>
-      <li><a href="daum.html" style="text-decoration: none;">Daum</a></li>
-      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
-      <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
-      <li><a href="image.html" style="text-decoration: none;">Image</a></li>
-      <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
-      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
-      <li><a href="facebook.html" style="text-decoration: none;">Facebook</a></li>
-	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
-	  <li><a class="active" href="info.html" style="text-decoration:none" style="text-decoration: none;">Timer</a></li>
-    </ul>
-   
+  <ul>
+    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
+   <li><a href="info.html" style="text-decoration:none">+More</a></li>
+   <li><a class="active" href="#" style="text-decoration: none;">Timer</a></li>
+ </ul>
+
     <h1 class="no-drag"><span>T</span><span>i</span><span>m</span><span>e</span><span>r</span><span></span></h1>
     <h2></h2>
     <input type="text" id="o" style="width: 30px;" onkeypress="if(event.keyCode==13) {open1();}" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">시간
     <input type="text" id="o2" style="width: 30px;" onkeypress="if(event.keyCode==13) {open1();}" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">분
     <input type="text" id="o3" style="width: 30px;" onkeypress="if(event.keyCode==13) {open1();}" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">초<br><br>
     <input type="button" value="확인" onclick="open1()" class="btn btn-outline-info">
-	
+
     <!--<form action="https://www.google.com/search?q=" method="get">
         <div class="mx-auto search-bar input-group rounded-pill">
           <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
@@ -50,15 +58,15 @@
     <div style="position: fixed; bottom: 15px; right: 15px">
     	<input type="button" class="btn btn-outline-info" onclick="back()" id = 'night_day' value = '배경 On'>
     </div>
-    
+
 	<div id="ViewTimer"></div>
     <!--<script language="JavaScript">
-		
+
 		var SetTime = 15000;
 		var Set = SetTime % 3600
 		function msg_time() {
 			var Set = SetTime % 3600
-			
+
 			m = Math.floor(SetTime / 3600) + "시간 " + Math.floor(Set / 60) + "분 " + (Set % 60) + "초";
 			if (SetTime > 7199) {
 				var msg = "현재 남은 시간은 <font color='blue'>" + m + "</font> 입니다.";
@@ -74,19 +82,19 @@
 			}
 			//var msg = "현재 남은 시간은 <font color='red'>" + m + "</font> 입니다.";
 			document.all.ViewTimer.innerHTML = msg;
-					
+
 			SetTime--;
-			
+
 			if (SetTime < 0) {
-				
+
 				clearInterval(tid);
 				alert("종료");
 			}
-			
+
 		}
 
 		window.onload = function TimerStart(){ tid=setInterval('msg_time()',1000) };
-		
+
 	</script>-->
     <script>
 		function inNumber(){
@@ -128,7 +136,7 @@
 			  links[i].style.color = 'powderblue';
 			  i = i + 1;
 			}
-		  } 
+		  }
 		 else {
 			document.querySelector('body').style.backgroundColor ='#81F7F3';
 			 localStorage.Theme = "blue";
@@ -196,6 +204,6 @@
 			}
 		}
 	</script>
-      
+
 </body>
 </html>
