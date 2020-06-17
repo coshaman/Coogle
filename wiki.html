@@ -9,6 +9,16 @@
     <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
+    
+    <script type="text/javascript" language="JavaScript">
+		var mobileKeyWords = new Array(''iPhone'', ''iPod'', ''BlackBerry'', ''Android'', ''Windows CE'', ''Windows CE;'', ''LG'', ''MOT'', ''SAMSUNG'', ''SonyEricsson'', ''Mobile'', ''Symbian'', ''Opera Mobi'', ''Opera Mini'', ''IEmobile'')
+		for (var word in mobileKeyWords){
+			if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+				window.location.href = "https://coshaman.github.io/Coogle/test.html";
+				break;
+			}
+		}</script>
+    
 </head>
 <body onload="init()">
   <!--여기는 제가 작업하는 곳입니다. 이건 '브라켓'이라는 텍스트 에디터인데... 필요하다면 설치해도 되지만 중요한 건 아닙니다.
@@ -26,7 +36,7 @@
     </ul>
    
     <h1 class="no-drag"><span style="color:rgb(94, 75, 64, 1)">Camuwiki</span></h1>
-    <form action="https://namu.wiki/w/" method="get">
+    <form action="https://namu.wiki/Search" method="get">
         <div class="mx-auto search-bar input-group mb-3 rounded-pill" style="width: 58vw;">
             <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
             <div class="input-group-append">
