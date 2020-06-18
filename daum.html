@@ -14,31 +14,37 @@
         a:visited { text-decoration:none }
         a:hover   { text-decoration:none }
         a:active  { text-decoration:none }
-
+    
     </style>
 	<script>var pc_device = "win16|win32|win64|mac|macintel";
-
+ 
     // 접속한 디바이스 환경
     var this_device = navigator.platform;
-
+ 
     if ( this_device ) {
-
+ 
         if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
             console.log('MOBILE');
 			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
         } else {
             console.log('PC');
         }
-
+ 
 	}</script>
 </head>
 <body onload="init()">
-  <ul>
-    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
-   <li><a href="info.html" style="text-decoration:none">+More</a></li>
-   <li><a class="active" href="#" style="text-decoration: none;">Daum</a></li>
- </ul>
-
+   <ul>
+      <li><a href="index.html">Google</a></li>
+      <li><a class="active" href="daum.html">Daum</a></li>
+      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
+      <li><a href="youtube.html">Youtube</a></li>
+      <li><a href="image.html">Image</a></li>
+      <li><a href="wiki.html">wiki</a></li>
+      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
+      <li><a href="facebook.html" style="text-decoration: none;">Sns</a></li>
+	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
+    </ul>
+   
     <h1 class="no-drag"><a href="https://www.daum.net/"><span>C</span><span>a</span><span>u</span><span>m</span></a></h1>
     <form action="https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&q=" method="get">
         <div class="mx-auto search-bar input-group mb-3 rounded-pill" style="width: 58vw;">
@@ -102,7 +108,7 @@
 				  links[i].style.color = 'powderblue';
 				  i = i + 1;
 				}
-			  }
+			  } 
 			 else {
 				document.querySelector('body').style.backgroundColor ='#81F7F3';
 				 localStorage.Theme = "blue";
@@ -118,7 +124,7 @@
 			  }
 		}
 		function init() {
-
+			
 			var val = localStorage.Theme;
 			if(val ==='night'){
 				document.querySelector('body').style.backgroundColor ='black';
@@ -154,6 +160,6 @@
 			  }
 		}
 	</script>
-
+    
 </body>
 </html>

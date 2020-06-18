@@ -15,40 +15,46 @@
 .accordion_area .content_area::before{display:inlnie;content:''}
 .accordion_area .content_area.act{display:block}</style>
 	<script>var pc_device = "win16|win32|win64|mac|macintel";
-
+ 
     // 접속한 디바이스 환경
     var this_device = navigator.platform;
-
+ 
     if ( this_device ) {
-
+ 
         if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
             console.log('MOBILE');
 			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
         } else {
             console.log('PC');
         }
-
+ 
 	}</script>
-
+    
 </head>
 <body style="text-align: center;" onload="init()">
-  <ul>
-    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
-   <li><a href="info.html" style="text-decoration:none">+More</a></li>
-   <li><a class="active" href="#" style="text-decoration: none;">Sns</a></li>
- </ul>
-
+   <ul>
+      <li><a href="index.html" style="text-decoration: none;">Google</a></li>
+      <li><a href="daum.html" style="text-decoration: none;">Daum</a></li>
+      <li><a href="naver.html" style="text-decoration: none;">naver</a></li>
+      <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
+      <li><a href="image.html" style="text-decoration: none;">Image</a></li>
+      <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
+      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
+      <li><a class="active" href="facebook.html" style="text-decoration: none;">Sns</a></li>
+	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
+    </ul>
+   
 	<h1 class="no-drag"><a href="https://story.kakao.com/" style="text-decoration: none;"><span style="color: #f3db00;">Cakao</span><span style="color: #e9b436;"><strong>story</strong></span></a></h1>
     <!--<form action="https://story.kakao.com/hashtag/" method="get">
         <div class="mx-auto search-bar input-group mb-3 rounded-pill" style="width: 58vw;">
             <input name="q" type="text" class="form-control" placeholder="Cakaostory 검색" aria-label="Cakaostory 검색" aria-describedby="button-addon2">
             <div class="input-group-append">
-
+                
                 <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
             </div>
         </div>
     </form>-->
-
+    
     <div id="share" style="text-align: center;">
 		<button type="button" class="btn btn-outline-dark" style="border-radius: 100px;width: 50px; height: 50px;"  onclick="location.href='facebook.html'"><i class="fab fa-facebook-f fa-2x" id="facebook"></i></button>
 		<button type="button" class="btn btn-outline-dark" style="border-radius: 100px;width: 50px; height: 50px;" onclick="location.href='twitter.html'"><i class="fab fa-twitter"></i></button>
@@ -63,7 +69,7 @@
     		<p style="font-size: 20px; color: coral;">스포티파이를 사용 중이신가요? 아쉽게도 스포티파이는 아직 지원이 안되요..ㅜㅜ</p>
 		</div>
 	</div>-->
-
+    
     <!--<form action="https://www.google.com/search?q=" method="get">
         <div class="mx-auto search-bar input-group rounded-pill">
           <input name="q" type="text" class="form-control" placeholder="검색어를 입력하세요" aria-label="검색어를 입력하세요" aria-describedby="button-addon2">
@@ -110,7 +116,7 @@
 		}
 
 	bindingAccordionEvent('.accordion_area');
-
+		
 		function back() {
 		if(document.querySelector('#night_day').value ==='night'){
 			document.querySelector('body').style.backgroundColor ='black';
@@ -145,7 +151,7 @@
 			  links[i].style.color = 'powderblue';
 			  i = i + 1;
 			}
-		  }
+		  } 
 		 else {
 			document.querySelector('body').style.backgroundColor ='#81F7F3';
 			 localStorage.Theme = "blue";

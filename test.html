@@ -9,33 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
     <style type="text/css"> .no-drag {-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;} </style>
-
+    
 	<script>var pc_device = "win16|win32|win64|mac|macintel";
-
+ 
     // 접속한 디바이스 환경
     var this_device = navigator.platform;
-
+ 
     if ( this_device ) {
-
+ 
         if ( pc_device.indexOf(navigator.platform.toLowerCase()) < 0 ) {
             console.log('MOBILE');
 			window.location.href = "https://coshaman.github.io/Cooglemobile/index.html";
         } else {
             console.log('PC');
         }
-
+ 
 	}</script>
 </head>
 <body style="text-align: center;" onload="init()">
-  <ul>
-    <li><a href="moa.html" style="text-decoration:none">Search</a></li>
-   <li><a href="info.html" style="text-decoration:none">+More</a></li>
-   <li><a class="active" href="#" style="text-decoration: none;">듀얼</a></li>
- </ul>
-
+   <ul>
+      <li><a class="active" href="index.html" style="text-decoration: none;">Google</a></li>
+      <li><a href="daum.html" style="text-decoration: none;">Daum</a></li>
+      <li><a href="naver.html" style="text-decoration: none;">Naver</a></li>
+      <li><a href="youtube.html" style="text-decoration: none;">Youtube</a></li>
+      <li><a href="image.html" style="text-decoration: none;">Image</a></li>
+      <li><a href="wiki.html" style="text-decoration: none;">wiki</a></li>
+      <li><a href="melon.html" style="text-decoration: none;">Music</a></li>
+      <li><a href="facebook.html" style="text-decoration: none;">Facebook</a></li>
+	  <li><a href="info.html" style="text-decoration:none" style="text-decoration: none;">+More</a></li>
+    </ul>
+   
     <h1 class="no-drag"><span>C</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
     <input type="text" id="o" style="width: 58vw;" onkeypress="if(event.keyCode==13) {open1();}">
-
+    
     <div style="text-align: center;">
     	<embed type="text/html" src="https://www.bing.com/" id='google' width="80%" height="1000vh">
     	<embed type="text/html" src="https://www.nate.com/" id="daum" width="80%" height="1000vh">
@@ -93,7 +99,7 @@
 			  links[i].style.color = 'powderblue';
 			  i = i + 1;
 			}
-		  }
+		  } 
 		 else {
 			document.querySelector('body').style.backgroundColor ='#81F7F3';
 			 localStorage.Theme = "blue";
@@ -150,6 +156,6 @@
 			document.getElementById('daum').src = 'https://search.daum.net/nate?thr=sbma&w=tot&q=' + src
 		}
 	</script>
-
+      
 </body>
 </html>
