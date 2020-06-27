@@ -104,6 +104,10 @@
     <script language="JavaScript">
 		var SetTime = localStorage.Time;
 		SetTime *= 1
+		if(isNaN(SetTime)) {
+			alert('오류가 발생했습니다!');
+			SetTime = 0;
+		}
 		var Set = SetTime % 3600
 		function msg_time() {
 			var val = localStorage.Theme;
