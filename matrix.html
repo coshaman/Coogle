@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>세미콜론</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylepast.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/wow.min.js"></script>
+    <script src="https://kit.fontawesome.com/4bea434f10.js" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <style type="text/css">
+    </style>
+    <style>
+	header {
+	     z-index: 500;
+	      position: fixed;
+	      top: 0;
+	      left: 0;
+	      right: 0;
+	      font-size: 16px;
+	      height: 50px;
+	      padding: 1rem;
+	      color: white;
+	      background: black;
+	      display: flex;
+	      align-items: center;
+	      letter-spacing: 5px;
+	      opacity: 0.8;
+	}
+	.active {
+    		background-color: #4CAF50;
+	}
+		body {
+			background-color: black;
+		}
+    </style>
+    <script>
+		setTimeout(function() {
+          myfunction()
+        }, 20000);
+        function myfunction() {
+            document.getElementById("id").innerHTML = "이번이 마지막 기회야. <br>이게 끝나면 돌이킬 수 없어.<br> 파란 약을 먹으면, 이야기는 여기서 끝나. 자넨 잠에서 깨어 일상으로 되돌아가 믿고 싶은 걸 믿으며 살면 돼.<br> 빨간 약을 먹으면, 이상한 나라에 남는다. 나는 토끼굴이 과연 어디까지 깊은지 보여줄 걸세.<br> 명심하게. 난 자네에게 진실만을 권한다는 걸.";
+			document.getElementById("but").style.display = "block";
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    
+    <div style="margin: auto; margin-top: 30vh; color: white; text-align: center; width: 80%; font-size: 15px; font-family: Gugi;">
+    	<p class="wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="3s" id="id">
+    		This is your last Chance.<br> After this, there is no turning back. <br>You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to believe.<br> You take the red pill, you stay in Wonderland. And I'll show you how deep the rabbit hole goes.....<br> Remember, all I'm offering you it's the truth, nothing more.
+    	</p>
+    	<div id="but" style="display: none;">
+    		<button style="background-color: skyblue;" onclick="alert('really?');" style="width: 15vw; border-radius: 25px; height: 20px;">파란 약</button>
+    		<button style="background-color: red;" onclick="location.href='https://discord.gg/aAJdJhd'" style="width: 15vw; border-radius: 25px; height: 20px;">빨간 약</button>
+    	</div>
+    </div>
+</body>
+</html>
